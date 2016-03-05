@@ -1,0 +1,276 @@
+/* --------------------------------------
+=========================================
+    GLOBAL STYLES
+=========================================
+-----------------------------------------*/
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+/*---------------------------------------
+   Positioning
+-----------------------------------------*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*---------------------------------------
+   Typography
+-----------------------------------------*/
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 1;
+	color: #33210E;
+}
+
+h1.hero-message {
+	font-weight: 900;
+	font-size: 55px;
+	color: #F2F2F2;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 35px;
+	line-height: 1;
+	color: #33210E;
+}
+
+h2.sub-message {
+	font-size: 24px;
+	color: #F2F2F2; 
+}
+
+h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: 300;
+	font-size: 30px;
+	line-height: 1;
+	color: #33210E;
+}
+
+h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 1;
+	color: #33210E;
+}
+
+p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #33210E;
+}
+
+/*---------------------------------------
+   LINKS
+-----------------------------------------*/
+
+a {
+	color: #33210E;
+	text-decoration: uppercase;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #33210E;
+}
+
+a:visited {}
+
+/*---------------------------------------
+   BUTTONS
+-----------------------------------------*/
+button.primary-btn {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1;
+	width: 200px;
+	height: 50px;
+	border: none;
+    -webkit-transition: all .2s ease-out;
+       -moz-transition: all .2s ease-out;
+         -o-transition: all .2s ease-out;
+            transition: all .2s ease-out;
+	color: #F2F2F2;
+	background: #58A711;
+	text-transform: uppercase;
+}
+
+	button.primary-btn:hover {
+		box-shadow: 0px 0px 5px #33210E;
+	}
+
+/*---------------------------------------
+   Navbar
+-----------------------------------------*/
+
+.navbar { 
+	margin-bottom: 0px;
+    -webkit-box-shadow: 0 8px 6px -4px #333;
+    -moz-box-shadow: 0 8px 6px -4px #333;
+    box-shadow: 0 8px 6px -4px #333;
+
+}
+
+.navbar-nav li a {
+ 	line-height: 60px;
+}
+
+.navbar-brand {
+	margin-left: 60% !important;
+}
+
+.navbar-right {
+  margin-right: 18px;
+}
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #333333;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #333333;
+}
+.navbar-default .navbar-text {
+  color: #333333;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #333333;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #333333;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #333333;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #333333;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #333333;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #333333;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #333333;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #333333;
+}
+.navbar-default .navbar-link {
+  color: #333333;
+}
+.navbar-default .navbar-link:hover {
+  color: #333333;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333333;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333333;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #333333;
+    background-color: #ffffff;
+  }
+  .navbar-brand {
+  	margin-left: 0px;
+  }
+}
+
+/*---------------------------------------
+
+GENERAL STYLING
+
+----------------------------------------*/
+
+.hero {
+	background: url("../images/Hero.jpg");
+	background-size: cover;
+	height: 100vh;
+}
+
+/*----------------------------------------------------------
+    BREAKPOINTS FOR BOOTSTRAP
+    -------------------------------------------------
+    EXTRA SMALL DEVICES     @media(max-width:767px){}
+    ie. phones
+    -------------------------------------------------
+    SMALL DEVICES           @media(min-width:768px){}
+    ie. tablets
+    -------------------------------------------------
+    MEDIUM DEVICES          @media(min-width:992px){}
+    ie. desktops
+    -------------------------------------------------
+    LARGE DEVICES          @media(min-width:1200px){}
+    ie. largest
+    -------------------------------------------------
+----------------------------------------------------------*/
