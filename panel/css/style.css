@@ -37,9 +37,9 @@ h1 {
 	color: #33210E;
 }
 
-h1.hero-message {
-	font-weight: 900;
-	font-size: 55px;
+.hero-message > h1 {
+	font-weight: 500;
+	font-size: 50px;
 	color: #F2F2F2;
 	text-transform: uppercase;
 }
@@ -54,8 +54,10 @@ h2 {
 }
 
 h2.sub-message {
-	font-size: 24px;
-	color: #F2F2F2; 
+	font-size: 20px;
+	color: #F2F2F2;
+  font-weight: 400; 
+  margin-bottom: 10%;
 }
 
 h3 {
@@ -242,7 +244,7 @@ button.primary-btn {
     background-color: #ffffff;
   }
   .navbar-brand {
-  	margin-left: 0px;
+  	margin-left: 0% !important;
   }
 }
 
@@ -256,6 +258,28 @@ GENERAL STYLING
 	background: url("../images/Hero.jpg");
 	background-size: cover;
 	height: 100vh;
+}
+
+.hero-left-panel {
+  background: rgba(70, 56, 37, .7);
+  height: 100vh;
+  float: left;
+}
+
+.hero-left-panel > .hero-message {
+  margin-top: 60%;
+  margin-left: 30%;
+  max-width: 250px;
+  width: 100%;
+}
+
+.hero-left-panel > .sub-message {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hero-left-panel > .primary-btn {
+  margin-left: 30%;
 }
 
 /*----------------------------------------------------------
@@ -274,3 +298,20 @@ GENERAL STYLING
     ie. largest
     -------------------------------------------------
 ----------------------------------------------------------*/
+
+@media (max-width: 767px) {
+  .hero-left-panel {
+    width: 100% !important;
+    margin: 0% !important;
+  }
+
+  .hero-left-panel > .hero-message {
+    margin: 0 auto !important;
+    margin-top: 40% !important;
+    font-size: 36px;
+  }
+
+  .hero-left-panel > .sub-message {
+    font-size: 18px;
+  }
+}
