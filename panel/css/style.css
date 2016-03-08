@@ -271,7 +271,7 @@ HERO STYLING
 
 .hero-left-panel > .hero-message {
   margin-top: 35vh;
-  margin-left: 30%;
+  margin-left: 25%;
   max-width: 250px;
   width: 100%;
 }
@@ -325,19 +325,38 @@ HERO STYLING
 SERVICES STYLING
 
 ----------------------------------------*/
-.left-panel > .panel-message {
-  margin-left: 30%;  
+.left-panel-message {
+  max-width: 325px;
+}
+
+.left-panel > .left-panel-message {
+  margin-left: 25%;  
+  padding-bottom: 20px;
 }
 
 .left-panel {
 }
 
 .right-panel {
-  background: red;
+  background: #a68b6a;
+}
+
+.right-panel-message h2, .right-panel-message p {
+  padding-left: 25px;
+  max-width: 75%;
+}
+
+.right-panel-message h2,  .right-panel-message p, .right-panel-message ul {
+  color: #f2f2f2;
+}
+
+.right-panel-message ul {
+  line-height: 2.5;
+  max-width: 75%;
 }
 
 @media (max-width: 767px) {
-  .left-panel > .panel-message {
+  .left-panel > .left-panel-message {
     margin-left: 0%;
     margin: 0 auto;
   }
