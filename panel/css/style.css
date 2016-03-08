@@ -39,7 +39,7 @@ h1 {
 
 .hero-message > h1 {
 	font-weight: 500;
-	font-size: 50px;
+	font-size: 45px;
 	color: #F2F2F2;
 	text-transform: uppercase;
 }
@@ -55,6 +55,7 @@ h2 {
 
 h2.sub-message {
 	font-size: 20px;
+  line-height: 1.2;
 	color: #F2F2F2;
   font-weight: 400; 
   margin-bottom: 10%;
@@ -137,15 +138,14 @@ button.primary-btn {
     -webkit-box-shadow: 0 8px 6px -4px #333;
     -moz-box-shadow: 0 8px 6px -4px #333;
     box-shadow: 0 8px 6px -4px #333;
-
 }
 
 .navbar-nav li a {
- 	line-height: 60px;
+ 	line-height: 70px;
 }
 
 .navbar-brand {
-	margin-left: 60% !important;
+	margin-left: 45% !important;
 }
 
 .navbar-right {
@@ -168,8 +168,8 @@ button.primary-btn {
 }
 .navbar-default .navbar-nav > li > a {
   color: #333333;
-  font-weight: 900;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -246,11 +246,14 @@ button.primary-btn {
   .navbar-brand {
   	margin-left: 0% !important;
   }
+  #logo {
+    height: 35px !important;
+  }
 }
 
 /*---------------------------------------
 
-GENERAL STYLING
+HERO STYLING
 
 ----------------------------------------*/
 
@@ -267,7 +270,7 @@ GENERAL STYLING
 }
 
 .hero-left-panel > .hero-message {
-  margin-top: 60%;
+  margin-top: 35vh;
   margin-left: 30%;
   max-width: 250px;
   width: 100%;
@@ -304,14 +307,38 @@ GENERAL STYLING
     width: 100% !important;
     margin: 0% !important;
   }
-
   .hero-left-panel > .hero-message {
     margin: 0 auto !important;
-    margin-top: 40% !important;
+    /*margin-top: 40% !important;*/
+    margin-top: 30vh !important;
+  }
+  .hero-left-panel > .hero-message > h1 {
     font-size: 36px;
   }
-
   .hero-left-panel > .sub-message {
-    font-size: 18px;
+    font-size: 16px;
+  }
+}
+
+/*---------------------------------------
+
+SERVICES STYLING
+
+----------------------------------------*/
+.left-panel > .panel-message {
+  margin-left: 30%;  
+}
+
+.left-panel {
+}
+
+.right-panel {
+  background: red;
+}
+
+@media (max-width: 767px) {
+  .left-panel > .panel-message {
+    margin-left: 0%;
+    margin: 0 auto;
   }
 }
