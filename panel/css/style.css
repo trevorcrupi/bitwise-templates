@@ -83,7 +83,7 @@ p {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.5;
 	color: #33210E;
 }
@@ -325,39 +325,98 @@ HERO STYLING
 SERVICES STYLING
 
 ----------------------------------------*/
-.left-panel-message {
+#services .left-panel-message {
   max-width: 325px;
 }
 
-.left-panel > .left-panel-message {
+#services .left-panel > .left-panel-message {
   margin-left: 25%;  
   padding-bottom: 20px;
 }
 
-.left-panel {
+#services .left-panel {
 }
 
-.right-panel {
-  background: #a68b6a;
+#services .right-panel {
+  background: #d6b486;
 }
 
-.right-panel-message h2, .right-panel-message p {
+#services .right-panel-message {
+  padding: 20px;
+}
+
+#services .right-panel-message h2, #services .right-panel-message p {
   padding-left: 25px;
   max-width: 75%;
 }
 
-.right-panel-message h2,  .right-panel-message p, .right-panel-message ul {
+#services .right-panel-message h2, #services .right-panel-message p, #services .right-panel-message ul {
   color: #f2f2f2;
 }
 
-.right-panel-message ul {
+#services .right-panel-message ul {
   line-height: 2.5;
   max-width: 75%;
 }
 
 @media (max-width: 767px) {
-  .left-panel > .left-panel-message {
+  #services .left-panel > .left-panel-message {
     margin-left: 0%;
     margin: 0 auto;
   }
+  #services .right-panel-message ul, #services .right-panel-message h2, #services .right-panel-message p {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+#dogdaycare .left-panel {
+  background: #a68b6a;
+}
+
+#dogdaycare .left-panel .left-panel-message {
+  color: #f2f2f2;
+  max-width: 85%;
+  float: right;
+}
+
+#dogdaycare .left-panel-message h2, #dogdaycare .left-panel-message p {
+  color: #f2f2f2;
+}
+
+
+#dogdaycare .right-panel {
+  color: #33210e;
+}
+
+#dogdaycare .right-panel-message {
+  max-width: 325px;
+  padding-left: 20px;
+}
+
+#dogdaycare .dog-photo {
+  max-width: 95%;
+  padding-bottom: 20px;  
+}
+
+@media (max-width: 767px) {
+  #dogdaycare .left-panel .left-panel-message {
+    padding: 20px;
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #dogdaycare .right-panel-message {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
+
+#parallax .image {
+  background: linear-gradient(rgba(70, 56, 37, 0.6), rgba(70, 56, 37, 0.6)), url('../images/Dog.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 350px;
 }
