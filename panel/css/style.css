@@ -420,3 +420,40 @@ SERVICES STYLING
   background-attachment: fixed;
   height: 350px;
 }
+
+#about h1 {
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+#about .about-section {
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#about .about-section h2 {
+  font-size: 24px;
+}
+
+#about {
+  padding-bottom: 40px;
+}
+
+#contact p, #contact h1 {
+  color: #f2f2f2;
+}
+
+#contact .hero {
+  background: linear-gradient(rgba(70, 56, 37, 0.6), rgba(70, 56, 37, 0.6)), url('../images/Hero.jpg');
+  background-size: cover;
+  /*background-position: center center;
+  background-attachment: fixed;*/
+  height: 100vh;
+}
+
+#contact .contact-us-message {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 50vh;
+}
