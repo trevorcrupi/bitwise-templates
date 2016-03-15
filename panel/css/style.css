@@ -10,6 +10,7 @@ html {
 
 body {
 	font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 /*---------------------------------------
@@ -24,6 +25,10 @@ body {
 	float: right;
 }
 
+ .navbar-default .navbar-nav > .active{
+    color: #333333;
+    background-color: red;
+ }
 /*---------------------------------------
    Typography
 -----------------------------------------*/
@@ -266,7 +271,7 @@ input[type="submit"] {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #333333;
-    background-color: #ffffff;
+    background-color: red;
   }
   .navbar-brand {
   	margin-left: 0% !important;
@@ -438,6 +443,52 @@ SERVICES STYLING
   }
 }
 
+#services_2 .left-panel-message {
+  max-width: 325px;
+}
+
+#services_2 .left-panel > .left-panel-message {
+  margin-left: 25%;  
+  padding-bottom: 20px;
+}
+
+#services_2 .left-panel {
+}
+
+#services_2 .right-panel {
+  background: #d6b486;
+}
+
+#services_2 .right-panel-message {
+  padding: 20px;
+}
+
+#services_2 .right-panel-message h2, #services_2 .right-panel-message p {
+  padding-left: 25px;
+  max-width: 75%;
+}
+
+#services_2 .right-panel-message h2, #services_2 .right-panel-message p, #services_2 .right-panel-message ul {
+  color: #f2f2f2;
+}
+
+#services_2 .right-panel-message ul {
+  line-height: 2.5;
+  max-width: 75%;
+}
+
+@media (max-width: 767px) {
+  #services_2 .left-panel > .left-panel-message {
+    margin-left: 0%;
+    margin: 0 auto;
+  }
+  #services_2 .right-panel-message ul, #services_2 .right-panel-message h2, #services_2 .right-panel-message p {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+
 #parallax .image {
   background: linear-gradient(rgba(70, 56, 37, 0.6), rgba(70, 56, 37, 0.6)), url('../images/Dog.jpg');
   background-size: cover;
@@ -474,15 +525,44 @@ SERVICES STYLING
   background-size: cover;
   /*background-position: center center;
   background-attachment: fixed;*/
-  height: 100vh;
+  height: 100%;
 }
 
 #contact .contact-us-message {
   max-width: 300px;
   margin: 0 auto;
-  margin-top: 40vh;
+  margin-top: 40%;
 }
 
 #contact .information {
-  margin-top: 10vh;
+  margin-top: 10%;
+}
+
+#contact .form-horizontal {
+  margin-top: 2em;
+}
+
+#footer_1 {
+  height: 75px;
+  background: #fff;
+}
+
+#footer_1 p {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 75px;
+  margin-top: 5px;
+  margin-left: 10%;
+}
+
+#footer_2 {
+  background: rgb(70, 56, 37);
+  color: #f2f2f2;
+}
+
+#footer_2 p {
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 20px;
+  margin-left: 10%;
 }
