@@ -542,27 +542,44 @@ SERVICES STYLING
   margin-top: 2em;
 }
 
-#footer_1 {
-  height: 75px;
+footer {
+  width: 100%;
+}
+
+footer #main {
   background: #fff;
 }
 
-#footer_1 p {
+
+footer #main p {
   font-size: 16px;
   font-weight: 800;
   line-height: 75px;
-  margin-top: 5px;
-  margin-left: 10%;
+  margin-top: 15px;
 }
 
-#footer_2 {
-  background: rgb(70, 56, 37);
+footer #watermark {
+  /*background: rgb(70, 56, 37);*/
+  background: #333;
   color: #f2f2f2;
 }
 
-#footer_2 p {
+footer #watermark p {
   font-size: 12px;
+  color: #f2f2f2;
   font-weight: 800;
-  line-height: 20px;
-  margin-left: 10%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+
+  footer #main .icons {
+    margin-right: 17%;
+  }
+
+  footer #main p, footer #watermark p {
+    margin-left: 10%;
+    text-align: left;    
+  }
 }
