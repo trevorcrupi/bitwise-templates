@@ -26,8 +26,7 @@ body {
 }
 
  .navbar-default .navbar-nav > .active{
-    color: #333333;
-    background-color: red;
+    color: red !important;
  }
 /*---------------------------------------
    Typography
@@ -44,7 +43,7 @@ h1 {
 
 .hero-message > h1 {
 	font-weight: 500;
-	font-size: 45px;
+	font-size: 49px;
 	color: #F2F2F2;
 	text-transform: uppercase;
 }
@@ -62,7 +61,7 @@ h2.sub-message {
 	font-size: 20px;
   line-height: 1.2;
 	color: #F2F2F2;
-  font-weight: 400; 
+  font-weight: 500; 
   margin-bottom: 10%;
 }
 
@@ -88,7 +87,7 @@ p {
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.5;
 	color: #33210E;
 }
@@ -98,13 +97,13 @@ p {
 -----------------------------------------*/
 
 a {
-	color: #33210E;
+	color: #58A711;
 	text-decoration: uppercase;
 }
 
 a:hover {
 	text-decoration: underline;
-	color: #33210E;
+	color: #58A711;
 }
 
 a:visited {}
@@ -133,6 +132,30 @@ button.primary-btn {
 	button.primary-btn:hover {
 		box-shadow: 0px 0px 5px #33210E;
 	}
+
+  button.hero-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #58A711;
+    -webkit-transition: all .2s ease-out;
+       -moz-transition: all .2s ease-out;
+         -o-transition: all .2s ease-out;
+            transition: all .2s ease-out;
+  color: #58A711;
+  background: transparent;
+  text-transform: uppercase;
+}
+
+  button.hero-btn:hover {
+    background: #58A711;
+    color: #f2f2f2;
+    border: 1px solid #58A711;
+  }
 
 /*---------------------------------------
    Forms
@@ -300,19 +323,26 @@ HERO STYLING
 }
 
 .hero-left-panel > .hero-message {
-  margin-top: 35vh;
+  margin-top: 30vh;
   margin-left: 25%;
   max-width: 250px;
+  width: 100%;
+}
+
+.sub-title {
+  max-width: 350px !important;
+  margin-left: 25%;
   width: 100%;
 }
 
 .hero-left-panel > .sub-message {
   margin-top: 5%;
   margin-bottom: 5%;
+  max-width: 250px;
 }
 
-.hero-left-panel > .primary-btn {
-  margin-left: 30%;
+.hero-left-panel > .hero-btn {
+  margin-left: 25%;
 }
 
 /*----------------------------------------------------------
@@ -356,12 +386,13 @@ SERVICES STYLING
 
 ----------------------------------------*/
 #services .left-panel-message {
-  max-width: 325px;
+  max-width: 375px;
 }
 
 #services .left-panel > .left-panel-message {
   margin-left: 25%;  
   padding-bottom: 20px;
+  padding: 35px;
 }
 
 #services .left-panel {
@@ -372,21 +403,22 @@ SERVICES STYLING
 }
 
 #services .right-panel-message {
-  padding: 20px;
+  padding: 35px;
 }
 
-#services .right-panel-message h2, #services .right-panel-message p {
+#services .right-panel-message h3, #services .right-panel-message p {
   padding-left: 25px;
   max-width: 75%;
 }
 
-#services .right-panel-message h2, #services .right-panel-message p, #services .right-panel-message ul {
+#services .right-panel-message h3, #services .right-panel-message p, #services .right-panel-message ul {
   color: #f2f2f2;
 }
 
 #services .right-panel-message ul {
   line-height: 2.5;
   max-width: 75%;
+  padding-left: 50px;
 }
 
 @media (max-width: 767px) {
@@ -394,7 +426,7 @@ SERVICES STYLING
     margin-left: 0%;
     margin: 0 auto;
   }
-  #services .right-panel-message ul, #services .right-panel-message h2, #services .right-panel-message p {
+  #services .right-panel-message ul, #services .right-panel-message h3, #services .right-panel-message p {
     width: 100%;
     margin: 0 auto;
   }
@@ -406,11 +438,13 @@ SERVICES STYLING
 
 #dogdaycare .left-panel .left-panel-message {
   color: #f2f2f2;
-  max-width: 85%;
+  max-width: 80%;
   float: right;
+  padding: 35px;
+  margin-right: 20px;
 }
 
-#dogdaycare .left-panel-message h2, #dogdaycare .left-panel-message p {
+#dogdaycare .left-panel-message h3, #dogdaycare .left-panel-message p {
   color: #f2f2f2;
 }
 
@@ -421,7 +455,7 @@ SERVICES STYLING
 
 #dogdaycare .right-panel-message {
   max-width: 325px;
-  padding-left: 20px;
+  padding: 35px;
 }
 
 #dogdaycare .dog-photo {
@@ -536,6 +570,7 @@ SERVICES STYLING
 
 #contact .information {
   margin-top: 10%;
+  margin-bottom: 1em;
 }
 
 #contact .form-horizontal {

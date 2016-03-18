@@ -49,8 +49,11 @@
 					<div class="col-md-5 col-xs-12 hero-left-panel">
 						<div class="hero-message">
 							<h1>We Stand By Our Performance</h1>
+						</div>
+						<div class="sub-title">
 							<h2 class="sub-message">Your poochies are not gonna need any primping. You know why? Because I bathed them, and I clipped them myself.</h2>
-							<button class="primary-btn">Book Your Appt.</button>
+						</div>
+							<button class="hero-btn">Book Your Appt.</button>
 						</div>
 					</div>
 				</div>
@@ -60,7 +63,7 @@
 				<div class="row">
 					<div class="col-md-5 col-xs-12 left-panel">
 						<div class="left-panel-message">
-							<h1>PROFESSIONAL DOG GROOMING</h1>
+							<h2>PROFESSIONAL DOG GROOMING</h2>
 							<p>Mutt Cuts grooming van is equipped
 							with state of the art equiptment and
 							experienced and gentle groomers. Whether
@@ -75,7 +78,7 @@
 					</div>
 					<div class="col-md-7 col-xs-12 right-panel">
 						<div class="right-panel-message">
-							<h2>OUR SERVICES</h2>
+							<h3>OUR SERVICES</h3>
 							<p>
 								Grooming and bath pricing dependent upon breed and service provided. 
 								Call us at 317-580-5050 to discuss grooming rates or chat with us at
@@ -104,7 +107,7 @@
 				<div class="row">
 					<div class="col-md-7 col-xs-12 left-panel">
 						<div class="left-panel-message">
-							<h2>Dog Daycare</h2>
+							<h3>Dog Daycare</h3>
 							<p>
 								Dogs have a natural instinct to play and 
 								exercise. Since regular exercise can improve
@@ -138,11 +141,11 @@
 				</div>
 			</section>
 
-			<section id="services_2">
+			<section id="services">
 				<div class="row">
 					<div class="col-md-5 col-xs-12 left-panel">
 						<div class="left-panel-message">
-							<h1>PROFESSIONAL DOG GROOMING</h1>
+							<h2>PROFESSIONAL DOG GROOMING</h2>
 							<p>Mutt Cuts grooming van is equipped
 							with state of the art equiptment and
 							experienced and gentle groomers. Whether
@@ -157,7 +160,7 @@
 					</div>
 					<div class="col-md-7 col-xs-12 right-panel">
 						<div class="right-panel-message">
-							<h2>OUR SERVICES</h2>
+							<h3>OUR SERVICES</h3>
 							<p>
 								Grooming and bath pricing dependent upon breed and service provided. 
 								Call us at 317-580-5050 to discuss grooming rates or chat with us at
@@ -243,7 +246,7 @@
 											Providence, RI 90312
 										</p>
 										<p>
-											Email: info@muttcutts.com <br />
+											Email: <a href="mailto:info@muttcutts.com">info@muttcutts.com</a> <br />
 											Tel: 123-456-7890 <br />
 										</p>
 									</div>
@@ -286,7 +289,7 @@
 										  </div>
 										  <div class="form-group">
 										    <div class="col-sm-offset-2 col-sm-10">
-										      <button type="submit" class="primary-btn right">Send Message</button>
+										      <button type="submit" class="hero-btn right">Send Message</button>
 										    </div>
 										  </div>
 										</form>
@@ -328,5 +331,13 @@
 	<script src="js/index.js"></script>
 	<script>
 		$('body').scrollspy({ target: '#navbar' });
+		
+		var offset = 75;
+
+		$('.navbar li a').click(function(event) {
+		    event.preventDefault();
+		    $($(this).attr('href'))[0].scrollIntoView();
+		    scrollBy(0, -offset);
+		});
 	</script>
 </html>
