@@ -476,14 +476,19 @@ SERVICES STYLING
     margin: 0 auto;
   }
 }
+/*---------------------------------------
 
+SERVICES STYLING
+
+----------------------------------------*/
 #services_2 .left-panel-message {
-  max-width: 325px;
+  max-width: 375px;
 }
 
 #services_2 .left-panel > .left-panel-message {
   margin-left: 25%;  
   padding-bottom: 20px;
+  padding: 35px;
 }
 
 #services_2 .left-panel {
@@ -494,21 +499,22 @@ SERVICES STYLING
 }
 
 #services_2 .right-panel-message {
-  padding: 20px;
+  padding: 35px;
 }
 
-#services_2 .right-panel-message h2, #services_2 .right-panel-message p {
+#services_2 .right-panel-message h3, #services_2 .right-panel-message p {
   padding-left: 25px;
   max-width: 75%;
 }
 
-#services_2 .right-panel-message h2, #services_2 .right-panel-message p, #services_2 .right-panel-message ul {
+#services_2 .right-panel-message h3, #services_2 .right-panel-message p, #services_2 .right-panel-message ul {
   color: #f2f2f2;
 }
 
 #services_2 .right-panel-message ul {
   line-height: 2.5;
   max-width: 75%;
+  padding-left: 50px;
 }
 
 @media (max-width: 767px) {
@@ -516,12 +522,11 @@ SERVICES STYLING
     margin-left: 0%;
     margin: 0 auto;
   }
-  #services_2 .right-panel-message ul, #services_2 .right-panel-message h2, #services_2 .right-panel-message p {
+  #services_2 .right-panel-message ul, #services_2 .right-panel-message h3, #services_2 .right-panel-message p {
     width: 100%;
     margin: 0 auto;
   }
 }
-
 
 #parallax .image {
   background: linear-gradient(rgba(70, 56, 37, 0.6), rgba(70, 56, 37, 0.6)), url('../images/Dog.jpg');
@@ -560,6 +565,7 @@ SERVICES STYLING
   /*background-position: center center;
   background-attachment: fixed;*/
   height: 100%;
+  width: 100%;
 }
 
 #contact .contact-us-message {
@@ -575,6 +581,17 @@ SERVICES STYLING
 
 #contact .form-horizontal {
   margin-top: 2em;
+}
+
+@media (max-width: 767px) {
+  #contact .information {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #contact .contact-us-message {
+    text-align: center;
+    margin-top: 10%;
+  }
 }
 
 footer {

@@ -53,8 +53,7 @@
 						<div class="sub-title">
 							<h2 class="sub-message">Your poochies are not gonna need any primping. You know why? Because I bathed them, and I clipped them myself.</h2>
 						</div>
-							<button class="hero-btn">Book Your Appt.</button>
-						</div>
+						<button class="hero-btn">Book Your Appt.</button>
 					</div>
 				</div>
 			</section>
@@ -141,7 +140,7 @@
 				</div>
 			</section>
 
-			<section id="services">
+			<section id="services_2">
 				<div class="row">
 					<div class="col-md-5 col-xs-12 left-panel">
 						<div class="left-panel-message">
@@ -328,16 +327,16 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/smoothAnchor.js"></script>
 	<script>
 		$('body').scrollspy({ target: '#navbar' });
-		
-		var offset = 75;
 
 		$('.navbar li a').click(function(event) {
-		    event.preventDefault();
-		    $($(this).attr('href'))[0].scrollIntoView();
-		    scrollBy(0, -offset);
+			event.preventDefault();
+			$(this).smoothAnchor({
+				speed: "1500",
+				offset: "75"
+			});
 		});
 	</script>
 </html>
