@@ -7,13 +7,12 @@
 	Wrapped Panel into one JS Class
 */
 
-var Panels = function()
-{
-	console.log("Object Instantiated.");
-}
+$('body').scrollspy({ target: '#navbar' });
 
-/*
-	Usage: 
-
-	var panel =  new Panels();
-*/
+$('.navbar li a').click(function(event) {
+	event.preventDefault();
+	$(this).smoothAnchor({
+		speed: "1500",
+		offset: "75"
+	});
+});
