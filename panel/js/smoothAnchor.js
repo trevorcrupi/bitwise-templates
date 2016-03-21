@@ -20,14 +20,19 @@
 		}
 
 		var anchor = this;
-		$(opts.animated).animate({
+		$.when(
+			$(opts.animated).animate({
         	scrollTop: getPosition($(anchor.attr('href'))[0]).y-opts.offset
-    	}, opts.speed);			
+    		}, opts.speed)
+    	)
+    	.then(opts.callback());
+    	//opts.callback();			
 	};
 	$.fn.smoothAnchor.defaults = {
 		animated: 'html, body',
 		speed: "2000",
-		offset: "0"
+		offset: "0",
+		callback: function() { }
 	};
 
 }(jQuery));

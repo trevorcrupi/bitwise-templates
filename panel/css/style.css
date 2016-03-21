@@ -317,6 +317,10 @@ HERO STYLING
 	height: 100vh;
 }
 
+#logo-element {
+  list-style-type: none;
+}
+
 .hero-left-panel {
   background: rgba(70, 56, 37, .7);
   height: 100vh;
